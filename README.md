@@ -1,5 +1,15 @@
 # learn-sql
 
+## Windows 
+```sql
+  sqlite3 # donde esté el .exe de sqlite.org
+```
+
+```sql
+  .open <db>.sqlite3
+```
+
+## Mac, Linux
 Crear la db:
 ```bash
   sqlite3 <db>.sqlite3
@@ -14,7 +24,8 @@ Crear una tabla `usuario`:
   CREATE TABLE usuario (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       email TEXT NOT NULL UNIQUE,
-      nombre TEXT NOT NULL
+      nombre TEXT, 
+      apellido TEXT
   );
 ```
 Insertamos un dato:
