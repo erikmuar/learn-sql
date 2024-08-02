@@ -1,3 +1,5 @@
+## Bloque 1
+
 1. Listar los nombres de los usuarios
   Pista: `SELECT * FROM tblUsuarios;`
 2. Calcular el saldo máximo de los usuarios de sexo “Mujer”
