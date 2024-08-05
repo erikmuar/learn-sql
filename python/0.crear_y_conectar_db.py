@@ -2,7 +2,7 @@ import sqlite3
 
 def main():
   # Conectar a la base de datos (crea el archivo si no existe)
-  conn = sqlite3.connect('<nombre_de_db>.sqlite') # extensiones habituales son .db o .sqlite / .sqlite3
+  conn = sqlite3.connect('db_python.sqlite') # extensiones habituales son .db o .sqlite / .sqlite3
                                                   # si queréis usar la extensión de VS Code para leer la db (SQLite Viewer), 
                                                   # vale cualquier opción
 
