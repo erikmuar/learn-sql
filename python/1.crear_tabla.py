@@ -1,3 +1,4 @@
+import os
 import sqlite3
 
 def crear_tabla():
@@ -33,7 +34,14 @@ def confirmar_creacion_de_tabla():
   cur = conn.cursor()
 
   # Leer y ejecutar el archivo SQL
-  with open('create_table.sql', 'r') as sql_file:
+
+  # Obtener el directorio actual
+  current_directory = os.path.dirname(os.path.abspath(__file__))
+
+  # Construir la ruta completa al archivo
+  file_path = os.path.join(current_directory, 'create_table.sql')
+
+  with open(file_path, 'r') as sql_file:
       sql_script = sql_file.read()
       cur.executescript(sql_script)
       conn.commit()
