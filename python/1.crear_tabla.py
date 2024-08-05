@@ -39,7 +39,7 @@ def confirmar_creacion_de_tabla():
       conn.commit()
 
   # Verificar la creación de la tabla
-  cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='tblUsuarios';")
+  cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='<nombre_de_db>.sqlite';")
   table_exists = cur.fetchone()
 
   # Confirmar y hacer un print después
