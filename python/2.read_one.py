@@ -2,7 +2,7 @@ import sqlite3
 
 def read_one(id):
     # Conectar a la base de datos
-    conn = sqlite3.connect('<nombre_de_db>.sqlite')
+    conn = sqlite3.connect('db_python.sqlite')
     cur = conn.cursor()
 
     # Leer el archivo SQL
@@ -25,3 +25,5 @@ def read_one(id):
 if __name__ == '__main__':
   # Ejemplo de uso
   read_one(1)  # Cambia el valor del id según sea necesario
+  read_one(2)
+  read_one(3) # No hay ID 3 

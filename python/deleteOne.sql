@@ -1,1 +1,1 @@
--- NOT IMPLEMENTED
+DELETE FROM tblUsuarios WHERE idx = ?;

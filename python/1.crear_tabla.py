@@ -19,7 +19,7 @@ def crear_tabla():
     email TEXT,
     telefono TEXT,
     marca TEXT,
-    compañia TEXT,
+    compania TEXT,
     saldo REAL,
     activo INTEGER CHECK(activo IN (0, 1))
   )

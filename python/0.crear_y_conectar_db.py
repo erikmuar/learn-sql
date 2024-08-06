@@ -20,7 +20,7 @@ def main():
     email TEXT,
     telefono TEXT,
     marca TEXT,
-    compañia TEXT,
+    compania TEXT,
     saldo REAL,
     activo INTEGER CHECK(activo IN (0, 1))
   )
@@ -28,11 +28,11 @@ def main():
 
   # Insertar datos
   cur.execute('''
-  INSERT INTO tblUsuarios (usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo)
+  INSERT INTO tblUsuarios (usuario, nombre, sexo, nivel, email, telefono, marca, compania, saldo, activo)
   VALUES ('BRE2271', 'BRENDA', 'M', 2, 'brenda@live.com', '655-330-5736', 'SAMSUNG', 'IUSACELL', 100, 1)
   ''')
   cur.execute('''
-  INSERT INTO tblUsuarios (usuario, nombre, sexo, nivel, email, telefono, marca, compañia, saldo, activo)
+  INSERT INTO tblUsuarios (usuario, nombre, sexo, nivel, email, telefono, marca, compania, saldo, activo)
   VALUES ('OSC4677', 'OSCAR', 'H', 3, 'oscar@gmail.com', '655-143-4181', 'LG', 'TELCEL', 0, 1)
   ''')
 
